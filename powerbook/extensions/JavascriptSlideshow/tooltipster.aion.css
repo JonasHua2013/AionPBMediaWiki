@@ -1,0 +1,36 @@
+/* AION EU TOOLIPS CSS */ 
+
+
+.aiontooltip.tooltipster-sidetip .tooltipster-content{
+color:black;
+line-height:18px;
+padding:0px
+}
+
+.aiontooltip.tooltipster-sidetip .tooltipster-box{
+background:#FFF;
+border:2px solid #000;
+border-radius:4px
+}
+
+
+
+
+
+/* AION EU COMPARE CSS */ 
+
+.tooltipster-base.aioncompare {
+	pointer-events: all;
+}
+
+.aioncompare.tooltipster-sidetip .tooltipster-content{
+color:black;
+line-height:18px;
+padding:0px
+}
+
+.aioncompare.tooltipster-sidetip .tooltipster-box{
+background:#FFF;
+border:0px;
+border-radius:0px
+}

@@ -14,3 +14,9 @@ function itemIconBuilder ($icon_name) {
     return '<img class="thumb" src="https://aionpowerbook.com/item/icon/' . iconFix($icon_name) . '.png" width="37" height="37" alt="">';
 
 }
+
+function minionIconBuilder ($icon_name) {
+
+    return '<img class="thumb" src="https://aionpowerbook.com/pet/icon/' . iconFix($icon_name) . '.png" width="37" height="37" alt="">';
+
+}

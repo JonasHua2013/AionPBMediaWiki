@@ -1,6 +1,6 @@
 <?php
 
-$requestData= $_REQUEST;
+$requestData = $_REQUEST;
 
 $craft = $_GET['craft'];
 $lang = $_GET['lang'];

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+<string>
+<name>STR_TOOLTIP_SWORD</name>
+<en>Sword</en>
+<de>Schwert</de>
+<es>Espada</es>
+<fr>Épée</fr>
+<it>Spada</it>
+<ko>장검</ko>
+<pl>Miecz</pl>
+<us>Sword</us>
+</string>
+  
+<string>
+<name>STR_TOOLTIP_MACE</name>
+<en>Mace</en>
+<de>Streitkolben</de>
+<es>Maza</es>
+<fr>Masse</fr>
+<it>Mazza</it>
+<ko>전곤</ko>
+<pl>Buzdygan</pl>
+<us>Mace</us>
+</string>
+  
+<string>
+<name>STR_TOOLTIP_TWOHANDEDSWORD</name>
+<en>Greatsword</en>
+<de>Großschwert</de>
+<es>Espadón</es>
+<fr>Espadon</fr>
+<it>Spadone</it>
+<ko>대검</ko>
+<pl>Miecz dwuręczny</pl>
+<us>Greatsword</us>
+</string>
+<string>
+<name>STR_TOOLTIP_BOOK</name>
+<en>Spellbook</en>
+<de>Zauberbuch</de>
+<es>Libro de hechizos</es>
+<fr>Grimoire</fr>
+<it>Libro degli incantesimi</it>
+<ko>법서</ko>
+<pl>Księga zaklęć</pl>
+<us>Spellbook</us>
+</string>
+<string>
+<name>STR_TOOLTIP_CANNON</name>
+<en>Aether Cannon</en>
+<de>Ätherkanone</de>
+<es>Cañón etéreo</es>
+<fr>Canon à Éther</fr>
+<it>Cannone a etere</it>
+<ko>마력포</ko>
+<pl>Armata Eterowa</pl>
+<us>Aethercannon</us>
+</string>
+<string>
+<name>STR_TOOLTIP_DAGGER</name>
+<en>Dagger</en>
+<de>Dolch</de>
+<es>Puñal</es>
+<fr>Dague</fr>
+<it>Pugnale</it>
+<ko>단검</ko>
+<pl>Sztylet</pl>
+<us>Dagger</us>
+</string>
+<string>
+<name>STR_TOOLTIP_GUN</name>
+<en>Aether Revolver</en>
+<de>Ätherrevolver</de>
+<es>Revólver etéreo</es>
+<fr>Revolver à Éther</fr>
+<it>Revolver a etere</it>
+<ko>마력총</ko>
+<pl>Rewolwery Eterowe</pl>
+<us>Pistol</us>
+</string>
+<string>
+<name>STR_TOOLTIP_KEYBLADE</name>
+<en>Aether Key</en>
+<de>Ätherschlüssel</de>
+<es>Llave del éter</es>
+<fr>Clé éthérée</fr>
+<it>Chiave eterea</it>
+<ko>기동쇠</ko>
+<pl>Klucz Eterowy</pl>
+<us>Cipher-Blade</us>
+</string>
+<string>
+<name>STR_TOOLTIP_ORB</name>
+<en>Orb</en>
+<de>Kugel</de>
+<es>Esfera</es>
+<fr>Orbe</fr>
+<it>Sfera</it>
+<ko>보주</ko>
+<pl>Kula</pl>
+<us>Orb</us>
+</string>
+<string>
+<name>STR_TOOLTIP_POLEARM</name>
+<en>Polearm</en>
+<de>Stangenwaffe</de>
+<es>Arma de asta</es>
+<fr>Guisarme</fr>
+<it>Picca</it>
+<ko>미늘창</ko>
+<pl>Broń drzewcowa</pl>
+<us>Polearm</us>
+</string>
+<string>
+<name>STR_TOOLTIP_STAFF</name>
+<en>Staff</en>
+<de>Stab</de>
+<es>Bastón</es>
+<fr>Bâton</fr>
+<it>Bacchetta</it>
+<ko>법봉</ko>
+<pl>Kostur</pl>
+<us>Staff</us>
+</string>
+<string>
+<name>STR_TOOLTIP_BOW</name>
+<en>Bow</en>
+<de>Bogen</de>
+<es>Arco</es>
+<fr>Arc</fr>
+<it>Arco</it>
+<ko>활</ko>
+<pl>Łuk</pl>
+<us>Bow</us>
+</string>
+
+<string id="12">
+<name>STR_TOOLTIP_HARP</name>
+<en>Stringed Instrument</en>
+<de>Saiteninstrument</de>
+<es>Instrumento de cuerda</es>
+<fr>Instrument à cordes</fr>
+<it>Strumento a corda</it>
+<ko>현악기</ko>
+<pl>Instrument Strunowy</pl>
+<us>Harp</us>
+</string>
+
+<string>
+<name>STR_ROBE</name>
+<en>Cloth</en>
+<de>Stoff</de>
+<es>Tela</es>
+<fr>Tissu</fr>
+<it>Tessuto</it>
+<ko>로브</ko>
+<pl>Płótno</pl>
+<us>Cloth</us>
+</string>
+<string>
+<name>STR_LEATHER</name>
+<en>Leather</en>
+<de>Leder</de>
+<es>Cuero</es>
+<fr>Cuir</fr>
+<it>Pelle</it>
+<ko>가죽</ko>
+<pl>Skóra</pl>
+<us>Leather</us>
+</string>
+<string>
+<name>STR_CHAIN</name>
+<en>Chain</en>
+<de>Kette</de>
+<es>Malla</es>
+<fr>Mailles</fr>
+<it>Maglia metallica</it>
+<ko>사슬</ko>
+<pl>Kolczuga</pl>
+<us>Chain</us>
+</string>
+<string>
+<name>STR_PLATE</name>
+<en>Plate</en>
+<de>Platte</de>
+<es>Placas</es>
+<fr>Plates</fr>
+<it>Piastre</it>
+<ko>판금</ko>
+<pl>Płyta</pl>
+<us>Plate</us>
+</string>
+<string>
+<name>STR_TOOLTIP_GLOVE</name>
+<en>Gloves</en>
+<de>Handschuhe</de>
+<es>Guantes</es>
+<fr>Mains</fr>
+<it>Guanti</it>
+<ko>장갑</ko>
+<pl>Rękawice</pl>
+<us>Gloves</us>
+</string>
+<string>
+<name>STR_VENDOR_KIND_HEAD</name>
+<en>Headgear</en>
+<de>Kopfbedeckung</de>
+<es>Para la cabeza</es>
+<fr>Couvre-chef</fr>
+<it>Copricapo</it>
+<ko>머리장식</ko>
+<pl>Nakrycie głowy</pl>
+<us>Headgear</us>
+</string>
+<string>
+<name>STR_TOOLTIP_LEG</name>
+<en>Pants</en>
+<de>Hose</de>
+<es>Pantalón</es>
+<fr>Jambes</fr>
+<it>Pantaloni</it>
+<ko>하의</ko>
+<pl>Spodnie</pl>
+<us>Pants</us>
+</string>
+<string>
+<name>STR_TOOLTIP_FOOT</name>
+<en>Shoes</en>
+<de>Schuhe</de>
+<es>Zapatos</es>
+<fr>Pieds</fr>
+<it>Scarpe</it>
+<ko>신발</ko>
+<pl>Buty</pl>
+<us>Shoes</us>
+</string>
+<string>
+<name>STR_TOOLTIP_SHOULDER</name>
+<en>Pauldrons</en>
+<de>Schulterschutz</de>
+<es>Hombrera</es>
+<fr>Épaules</fr>
+<it>Spallacci</it>
+<ko>어깨</ko>
+<pl>Naramienniki</pl>
+<us>Pauldrons</us>
+</string>
+<string>
+<name>STR_TOOLTIP_TORSO</name>
+<en>Jacket</en>
+<de>Oberteil</de>
+<es>Prenda superior</es>
+<fr>Torse</fr>
+<it>Parte superiore</it>
+<ko>상의</ko>
+<pl>Góra stroju</pl>
+<us>Jacket</us>
+</string>
+<string>
+<name>STR_TOOLTIP_SHIELD</name>
+<en>Shield</en>
+<de>Schild</de>
+<es>Escudo</es>
+<fr>Bouclier</fr>
+<it>Scudo</it>
+<ko>방패</ko>
+<pl>Tarcza</pl>
+<us>Shield</us>
+</string>
+<string>
+<name>STR_TOOLTIP_WAIST</name>
+<en>Belt</en>
+<de>Gürtel</de>
+<es>Cinturón</es>
+<fr>Ceinture</fr>
+<it>Cintura</it>
+<ko>허리띠</ko>
+<pl>Pas</pl>
+<us>Belt</us>
+</string>
+<string>
+<name>STR_TOOLTIP_EAR</name>
+<en>Earrings</en>
+<de>Ohrringe</de>
+<es>Pendientes</es>
+<fr>Boucles d&apos;oreilles</fr>
+<it>Orecchini</it>
+<ko>귀고리</ko>
+<pl>Kolczyki</pl>
+<us>Earrings</us>
+</string>
+<string>
+<name>STR_TOOLTIP_NECK</name>
+<en>Necklace</en>
+<de>Halskette</de>
+<es>Collar</es>
+<fr>Collier</fr>
+<it>Collana</it>
+<ko>목걸이</ko>
+<pl>Naszyjnik</pl>
+<us>Necklace</us>
+</string>
+<string>
+<name>STR_TOOLTIP_FINGER</name>
+<en>Ring</en>
+<de>Ring</de>
+<es>Anillo</es>
+<fr>Anneau</fr>
+<it>Anello</it>
+<ko>반지</ko>
+<pl>Pierścień</pl>
+<us>Ring</us>
+</string>
+<string>
+<name>STR_TOOLTIP_ITEM_BRACELET</name>
+<en>Bracelet</en>
+<de>Armband</de>
+<es>Pulsera</es>
+<fr>Bracelet</fr>
+<it>Bracciale</it>
+<ko>팔찌</ko>
+<pl>Bransoletka</pl>
+<us>Empyrean Bracelet</us>
+</string>
+<string>
+<name>STR_TOOLTIP_ITEM_TSHIRT</name>
+<en>Feather ornament</en>
+<de>Federschmuck</de>
+<es>Joyas de plumas</es>
+<fr>Colifichet en plumes</fr>
+<it>Piumaggio ornamentale</it>
+<ko>깃털장식</ko>
+<pl>Ozdoba z Piór</pl>
+<us>Feather accessory</us>
+</string>
+<string>
+<name>STR_TOOLTIP_WING</name>
+<en>Wings</en>
+<de>Flügel</de>
+<es>Alas</es>
+<fr>Ailes</fr>
+<it>Ali</it>
+<ko>날개</ko>
+<pl>Skrzydło</pl>
+<us>Wings</us>
+</string>
+<string>
+<name>STR_NPCTAP_MATERIAL</name>
+<en>Materials</en>
+<de>Materialien</de>
+<es>Materiales</es>
+<fr>Matériaux</fr>
+<it>Materiali</it>
+<ko>재료</ko>
+<pl>Materiały</pl>
+<us>Materials</us>
+</string>
+
+  
+  
+  
+</strings>

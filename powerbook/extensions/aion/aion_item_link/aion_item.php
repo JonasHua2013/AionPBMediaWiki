@@ -28,6 +28,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/wikiSpecif
 include($_SERVER['DOCUMENT_ROOT'].'/DB/aionDB.php');
 include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/commons.php');
 include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/items.php');
+include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/npcs.php');
 
 
 

@@ -5,6 +5,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/externalFu
 include($_SERVER['DOCUMENT_ROOT'].'/DB/aionDB.php');
 include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/commons.php');
 include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/items.php');
+include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/npcs.php');
 
 
 $requestData= $_REQUEST;
@@ -102,87 +103,26 @@ foreach ($query as $row) {
 
     // Type 3, Quests
     if ($type == '3') {
+
         $nestedData[] = $row["id"];
         $nestedData[] = '<img class="thumb" src="https://aionpowerbook.com/images/q2.png" width="37" height="37" alt="">';
         $nestedData[] = '<div class="link_' . $row["category1"] . '"><a href="https://aionpowerbook.com/powerbook/Quest/' . $row["id"] . '">' . $localization . '</a></div>';
         $nestedData[] = $row["client_level"];
+
     }
     // Type 4, skills
     elseif ($type == '4') {
+
         $nestedData[] = $row["id"];
         $nestedData[] = $row["skillicon_name"];
         $nestedData[] = '<a class="all skilltipzy" href="https://aionpowerbook.com/powerbook/Skill/' . $row["id"] . '" skillid="' . $row["id"] . '" skilltiplang="' . $lang . '" classic="' . $classic . '">' . $localization . '</a>';
+
     }
     // NPC, type 2
     elseif ($type == '2') {
 
-        $disk_type = strtolower($row["disk_type"]);
-        $hpgauge_level = $row["hpgauge_level"];
-        $ui_type = $row["ui_type"];
-
-        if ($row["stare_distance"] > 0) {
-            $agressive = '_a';
-        }
-
-
-        if ($disk_type == 'guard') {
-            $itemicon = 'icon_emblem_guard';
-        } elseif ($disk_type == 'ancientclan') {
-            $itemicon = 'icon_emblem_ancientclan';
-        } elseif ($disk_type == 'inhabitant') {
-            $itemicon = 'icon_emblem_inhabitant';
-        } elseif ($disk_type == 'merchant') {
-            $itemicon = 'icon_emblem_merchant';
-        } elseif ($disk_type == 'polymorph_human') {
-            $itemicon = '';
-        } elseif ($disk_type == 'polymorph_table_scale') {
-            $itemicon = '';
-        } elseif ($disk_type == NULL) {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($disk_type == 'god') {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($disk_type == 'function') {
-            $itemicon = 'icon_emblem_function';
-        } elseif ($disk_type == 'etc') {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($disk_type == 'e_water') {
-            $itemicon = 'icon_emblem_e_water';
-        } elseif ($disk_type == 'e_fire') {
-            $itemicon = 'icon_emblem_e_fire';
-        } elseif ($disk_type == 'e_earth') {
-            $itemicon = 'icon_emblem_e_earth';
-        } elseif ($disk_type == 'e_air') {
-            $itemicon = 'icon_emblem_e_air';
-        } elseif ($disk_type == 'drakan') {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($disk_type == 'd1' or $disk_type == 'd2' or $disk_type == 'd3' or $disk_type == 'd4' or $disk_type == 'd5' or $disk_type == 'd6' or $disk_type == 'd7') {
-            if ($hpgauge_level == 1 or $hpgauge_level == 10 or $hpgauge_level == 20 or $hpgauge_level == 26) {
-                $itemicon = 'icon_emblem_monster_n_1' . $agressive;
-            } elseif ($hpgauge_level == 2 or $hpgauge_level == 11 or $hpgauge_level == 21 or $hpgauge_level == 27) {
-                $itemicon = 'icon_emblem_monster_n_2' . $agressive;
-            } elseif ($hpgauge_level == 3 or $hpgauge_level == 12 or $hpgauge_level == 22) {
-                $itemicon = 'icon_emblem_monster_n_3' . $agressive;
-            } elseif ($hpgauge_level == 4 or $hpgauge_level == 13 or $hpgauge_level == 23) {
-                $itemicon = 'icon_emblem_monster_r_1' . $agressive;
-            } elseif ($hpgauge_level == 5 or $hpgauge_level == 14 or $hpgauge_level == 24) {
-                $itemicon = 'icon_emblem_monster_r_2' . $agressive;
-            } elseif ($hpgauge_level == 6 or $hpgauge_level == 15 or $hpgauge_level == 25) {
-                $itemicon = 'icon_emblem_monster_r_3' . $agressive;
-            }
-        }
-
-
-        if ($ui_type == 'trap') {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($ui_type == 'NoneButRotate') {
-            $itemicon = 'icon_emblem_etc';
-        } elseif ($ui_type == 'none') {
-            $itemicon = 'icon_emblem_etc';
-        }
-
-
         $nestedData[] = $row["id"];
-        $nestedData[] = '<img class="thumb" src="https://aionpowerbook.com/npc/icon/' . $itemicon . '.png" width="37" height="37" alt="">';
+        $nestedData[] = npcIconBuilder(strtolower($row["disk_type"]), $row["hpgauge_level"], $row["ui_type"], $row["stare_distance"]);
         $nestedData[] = '<a href="https://aionpowerbook.com/powerbook/NPC/' . $row["id"] . '">' . $localization . '</a>';
         $nestedData[] = $row["level"];
         $nestedData[] = number_format($row["hp"]);
@@ -192,10 +132,9 @@ foreach ($query as $row) {
     // Type 1, Items
     else {
 
-
         $nestedData[] = $row["id"];
-        $nestedData[] = $row["icon_name"];
-        $nestedData[] = '<a class="tooltipzy col_' . strtolower($row["quality"]) . ' bold" href="https://aionpowerbook.com/powerbook/Item/' . $row["id"] . '" tooltipID="' . $row["id"] . '" tooltiplang="' . $toollang . '" classic="' . $classic . '" >' . $localization . '</a>';
+        $nestedData[] = itemIconBuilder($row["icon_name"]);
+        $nestedData[] = '<a class="tooltipzy col_' . strtolower($row["quality"]) . ' bold" href="https://aionpowerbook.com/powerbook/Item/' . $row["id"] . '" tooltipID="' . $row["id"] . '" tooltiplang="' . $lang . '" classic="' . $classic . '" >' . $localization . '</a>';
         $nestedData[] = $row["level"];
     }
 

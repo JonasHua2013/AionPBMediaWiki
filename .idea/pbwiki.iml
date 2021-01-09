@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/powerbook/includes/composer" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/christian-riesen/base32" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/cssjanus/cssjanus" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/jakobo/hotp-php" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/liuggio/statsd-php-client" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/oojs/oojs-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/console_getopt" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/mail" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/mail_mime" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/net_smtp" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/net_socket" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/pear-core-minimal" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pear/pear_exception" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/pleonasm/bloom-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/at-ease" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/base-convert" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/cdb" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/cldr-plural-rule-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/common-passwords" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/composer-merge-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/html-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/ip-set" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/ip-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/less.php" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/object-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/parsoid" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/php-session-serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/purtle" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/relpath" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/remex-html" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/running-stat" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/scoped-callback" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/services" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/timestamp" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/utfnormal" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/wait-condition-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/wikipeg" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/wrappedstring" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/xmp-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/wikimedia/zest-css" />
+      <excludeFolder url="file://$MODULE_DIR$/powerbook/vendor/zordius/lightncandy" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

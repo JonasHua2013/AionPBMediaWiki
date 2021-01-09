@@ -73,7 +73,7 @@ function AiongatheringAjaxTableParserFunction( &$parser, $arg1='' ) {
 		
 		<br><br><div class="hbody">
 
-		<table class="lists list_basicitem width_100p DataTableAJAX" id="questserverTable" DefsColumn="[{targets: 0,className: \'al pr\', type: \'num-html\'},{targets: 1,className: \'al pr\'},{targets: 2,type: \'num-html\'},{targets: 3,className: \'al pr\'}, {targets: 4,className: \'al pr\'}]" ajaxurl="http://powerbook/extensions/aion/a_gathering_table/gathering_table_ajax.php?craft=' . $arg1 . '&lang=' . language() . '&classic=' . isClassic() . '" dataOrder="3"><thead><tr>
+		<table class="lists list_basicitem width_100p DataTableAJAX" id="questserverTable" DefsColumn="[{targets: 0,className: \'al pr\', type: \'num-html\'},{targets: 1,className: \'al pr\'},{targets: 2,type: \'num-html\'},{targets: 3,className: \'al pr\'}, {targets: 4,className: \'al pr\'}]" ajaxurl="http://pbwiki/powerbook/extensions/aion/a_gathering_table/gathering_table_ajax.php?craft=' . $arg1 . '&lang=' . language() . '&classic=' . isClassic() . '" dataOrder="3"><thead><tr>
 		<th class="fixed nowrap no-sorting"></th>
 		<th class="nowrap ajax100p">Name</th>
 		<th class="nowrap">Skill</th>

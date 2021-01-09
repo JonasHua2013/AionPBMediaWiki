@@ -7,12 +7,11 @@ $lang = $_GET['lang'];
 
 
 
-
-include($_SERVER['DOCUMENT_ROOT'].'/extensions/aion/aion_item_link/db.php');
-include($_SERVER['DOCUMENT_ROOT'].'/extensions/aion/include/externalFunctions.php');
-include($_SERVER['DOCUMENT_ROOT'].'/extensions/aion/include/commons.php');
-include($_SERVER['DOCUMENT_ROOT'].'/extensions/aion/include/dbConnection.php');
-include($_SERVER['DOCUMENT_ROOT'].'/extensions/aion/include/items.php');
+include($_SERVER['DOCUMENT_ROOT'].'/DB/db.php');
+include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/externalFunctions.php');
+include($_SERVER['DOCUMENT_ROOT'].'/DB/aionDB.php');
+include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/commons.php');
+include($_SERVER['DOCUMENT_ROOT'].'/powerbook/extensions/aion/include/items.php');
 
 
 

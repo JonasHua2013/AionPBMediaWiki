@@ -15,6 +15,7 @@ function translate ($name, $language) {
            FROM  translation
            WHERE name = ? ", $name)->fetchArray();
 
-    return !empty($row[$language]) ? $row[$language] : $row['ko'];
+
+    return !empty($row[$language]) ? $row[$language] : (!empty($row['ko']) ? $row['ko'] : $name);
 
 }

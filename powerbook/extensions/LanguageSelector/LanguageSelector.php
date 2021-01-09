@@ -151,6 +151,14 @@ function wfLanguageSelectorGetLanguageCode( $user, &$code ) {
 	if ( $setlang && !in_array( $setlang, wfGetLanguageSelectorLanguages() ) ) {
 		$setlang = null; // ignore invalid
 	}
+	
+	if ( $wgRequest->getText( 'aionclassic' ) == '1'  ) {
+		$wgRequest->response()->setcookie( 'AionClassicCookie', '1' );
+	}
+	
+	if ( $wgRequest->getText( 'aionclassic' ) == '0'  ) {
+		$wgRequest->response()->setcookie( 'AionClassicCookie', '0' );
+	}
 
 	if ( $setlang ) {
 		$wgRequest->response()->setcookie( 'LanguageSelectorLanguage', $setlang );
@@ -361,6 +369,56 @@ function wfLanguageSelectorAddJavascript( $outputPage, $parserOutput, $data ) {
 	$outputPage->addModules( 'ext.languageSelector' );
 }
 
+
+function wfAionClassicCheckBox () {
+	global $wgRequest;
+	$aionclassicurl = '-1';
+	$class = false;
+	$live = true;
+	
+	if(isset($_GET['aionclassic'])) {
+		$aionclassicurl = $_GET['aionclassic'];
+	}
+	
+	$requestedAionClassic = $wgRequest->getCookie( 'AionClassicCookie' );
+	
+	if ($aionclassicurl == '0' || $aionclassicurl == '1' ) {
+		if ($aionclassicurl == '1') {
+			$class = true;
+			$live = false;
+		} elseif ($aionclassicurl == '0') {
+			$class = false;
+			$live = true;
+		}
+	} else {
+		if ($requestedAionClassic == '1') {
+			$class = true;
+			$live = false;
+		} elseif ($requestedAionClassic == '0') {
+			$class = false;
+			$live = true;
+		} else {
+			$live = true;
+		}
+	}
+	
+	$html = Xml::openElement( 'span', array('class' => 'restrictionTip', 'title' => 'Live Server') );
+	$html .= Xml::openElement( 'label', array('for' => 'alive', 'style' => 'font-size:15px; color: white' ) );
+	$html .= "&nbsp;&nbsp;Live: ";
+	$html .= Xml::closeElement( 'label' );
+	$html .= Xml::radio('aionclassic', '0', $live, array('id' => 'alive') );
+	$html .= Xml::closeElement( 'span' );
+	$html .= Xml::openElement( 'span', array('class' => 'restrictionTip', 'title' => 'Classic Server'));
+	$html .= Xml::openElement( 'label', array('for' => 'aclassic', 'style' => 'font-size:15px; color: white') );
+	$html .= "&nbsp;&nbsp;Classic: ";
+	$html .= Xml::closeElement( 'label' );
+	$html .= Xml::radio('aionclassic', '1', $class, array('id' => 'aclassic') );
+	$html .= Xml::closeElement( 'span' );
+	
+	return $html;
+	
+}
+
 function wfLanguageSelectorHTML( Title $title, $style = null, $class = null, $selectorstyle = null, $buttonstyle = null, $showCode = null ) {
 	global $wgLang, $wgScript, $wgLanguageSelectorShowCode;
 
@@ -387,6 +445,28 @@ function wfLanguageSelectorHTML( Title $title, $style = null, $class = null, $se
 		'style' => 'display:inline;'
 	) );
 	$html .= Html::Hidden( 'title', $title->getPrefixedDBKey() );
+	
+	if(isset($_GET['dbid'])) {
+		$html .= Html::Hidden( 'dbid', $_GET['dbid'] );
+	}
+	
+	if(isset($_GET['hl'])) {
+		$html .= Html::Hidden( 'hl', $_GET['hl'] );
+	}
+	
+	if(isset($_GET['ll'])) {
+		$html .= Html::Hidden( 'll', $_GET['ll'] );
+	}
+	
+	if(isset($_GET['region'])) {
+		$html .= Html::Hidden( 'region', $_GET['region'] );
+	}
+	
+	if(isset($_GET['race'])) {
+		$html .= Html::Hidden( 'race', $_GET['race'] );
+	}
+	
+	
 	$html .= Xml::openElement( 'select', array(
 		'name' => 'setlang',
 		'id' => 'languageselector-select-' . $id,
@@ -397,12 +477,13 @@ function wfLanguageSelectorHTML( Title $title, $style = null, $class = null, $se
 		$name = Language::fetchLanguageName( $ln );
 		if ( $showCode ) $name = LanguageCode::bcp47( $ln ) . ' - ' . $name;
 
-		$html .= Xml::option( $name, $ln, $ln == $code );
+		$html .= Xml::option( $name, $ln, $ln == $code, $attribs=array('data-image' => 'https://aionpowerbook.com/images/' . $ln . '.png') );
 	}
 
 	$html .= Xml::closeElement( 'select' );
 	$html .= Xml::submitButton( wfMessage( 'languageselector-setlang' )->text(),
-		array( 'id' => 'languageselector-commit-' . $id, 'style' => $buttonstyle ) );
+		array( 'id' => 'languageselector-commit-' . $id, 'style' => $buttonstyle . 'display:none' ) );
+	$html .= wfAionClassicCheckBox();	
 	$html .= Xml::closeElement( 'form' );
 	$html .= Xml::closeElement( 'span' );
 

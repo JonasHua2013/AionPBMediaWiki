@@ -1,6 +1,11 @@
 <?php
 function SelectDB () {
-    $db = $_GET['db'];
+
+    $db = 0;
+
+    if(isset($_GET['db'])) {
+        $db = $_GET['db'];
+    }
 
     if ($db == 1) {
         $dbname = "aion_c";
